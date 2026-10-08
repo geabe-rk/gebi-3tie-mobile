@@ -15,9 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gebi_3TIE_Mobile">
 
-        <!-- Main Activity -->
+        <!-- Splash Screen sebagai halaman pertama -->
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
 
@@ -27,6 +27,18 @@
             </intent-filter>
 
         </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Auth Activity / Login -->
+        <activity
+            android:name=".AuthActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
 
         <!-- Pertemuan 3 -->
         <activity
