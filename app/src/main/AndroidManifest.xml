@@ -17,15 +17,14 @@
 
         <!-- Splash Screen sebagai halaman pertama -->
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".pertemuan6.SplashScreenActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <!-- Main Activity -->
@@ -36,7 +35,7 @@
 
         <!-- Auth Activity / Login -->
         <activity
-            android:name=".AuthActivity"
+            android:name=".pertemuan6.AuthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
@@ -45,7 +44,6 @@
             android:name=".pertemuan3.ThirdActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".pertemuan3.activity_third_result"
             android:exported="false"
@@ -68,7 +66,10 @@
             android:name=".pertemuan5.WebViewActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
+        <activity
+            android:name=".pertemuan7.SeventhActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

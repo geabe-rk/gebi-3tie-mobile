@@ -6,52 +6,68 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
+    <!-- Judul -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pemrograman Mobile"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnToFourth"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp" />
 
+    <!-- Tombol Pertemuan 4 -->
     <Button
         android:id="@+id/btnToFourth"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Ke Pertemuan Empat"
-        android:backgroundTint="@color/red"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Pertemuan 4"
+        android:backgroundTint="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/textView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
 
+    <!-- Tombol Pertemuan 5 -->
     <Button
         android:id="@+id/btnToFifth"
-        android:layout_width="178dp"
-        android:layout_height="43dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="Pertemuan 5"
         android:backgroundTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnToFourth"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Tombol Pertemuan 7 -->
+    <Button
+        android:id="@+id/btnPertemuan7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pertemuan 7"
+        android:backgroundTint="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/btnToFifth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
 
     <!-- Tombol Logout -->
     <Button
         android:id="@+id/btnLogout"
-        android:layout_width="178dp"
-        android:layout_height="43dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="Logout"
         android:backgroundTint="@color/red"
-        app:layout_constraintTop_toBottomOf="@id/btnToFifth"
+        app:layout_constraintTop_toBottomOf="@id/btnPertemuan7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,4 @@
+
 package com.example.gebi_3tie_mobile
 
 import android.content.Intent
@@ -10,7 +11,8 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.gebi_3tie_mobile.databinding.ActivityMainBinding
 import com.example.gebi_3tie_mobile.pertemuan4.FourthActivity
 import com.example.gebi_3tie_mobile.pertemuan5.FifthActivity
-import kotlin.jvm.java
+import com.example.gebi_3tie_mobile.pertemuan6.AuthActivity
+import com.example.gebi_3tie_mobile.pertemuan7.SeventhActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,17 +26,21 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            val systemBars = insets.getInsets(
+                WindowInsetsCompat.Type.systemBars()
+            )
+
             v.setPadding(
                 systemBars.left,
                 systemBars.top,
                 systemBars.right,
                 systemBars.bottom
             )
+
             insets
         }
 
-        // Tombol Pertemuan 4
+        // Pertemuan 4
         binding.btnToFourth.setOnClickListener {
             val intent = Intent(this, FourthActivity::class.java)
 
@@ -45,27 +51,33 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Tombol Pertemuan 5
+        // Pertemuan 5
         binding.btnToFifth.setOnClickListener {
             val intent = Intent(this, FifthActivity::class.java)
             startActivity(intent)
         }
 
-        // Tombol Logout
-        binding.btnLogout.setOnClickListener {
+        // Pertemuan 7
+        binding.btnPertemuan7.setOnClickListener {
+            val intent = Intent(this, SeventhActivity::class.java)
+            startActivity(intent)
+        }
 
+        // Logout
+        binding.btnLogout.setOnClickListener {
             AlertDialog.Builder(this)
                 .setTitle("Logout")
                 .setMessage("Apakah Anda yakin ingin logout?")
                 .setPositiveButton("Ya") { dialog, _ ->
 
                     // Ambil SharedPreferences
-                    val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
+                    val sharedPref = getSharedPreferences(
+                        "user_pref",
+                        MODE_PRIVATE
+                    )
 
                     // Hapus data login
-                    val editor = sharedPref.edit()
-                    editor.clear()
-                    editor.apply()
+                    sharedPref.edit().clear().apply()
 
                     dialog.dismiss()
 

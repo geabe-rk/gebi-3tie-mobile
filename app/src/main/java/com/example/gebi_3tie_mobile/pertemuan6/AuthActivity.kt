@@ -1,4 +1,4 @@
-package com.example.gebi_3tie_mobile
+package com.example.gebi_3tie_mobile.pertemuan6
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,8 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.gebi_3tie_mobile.MainActivity
+import com.example.gebi_3tie_mobile.R
 
 class AuthActivity : AppCompatActivity() {
 
