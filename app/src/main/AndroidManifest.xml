@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Permission untuk mengakses internet -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -15,61 +14,67 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gebi_3TIE_Mobile">
 
-        <!-- Splash Screen sebagai halaman pertama -->
+        <!-- Splash Screen tetap menjadi halaman pertama -->
         <activity
-            android:name=".pertemuan6.SplashScreenActivity"
+            android:name=".Home.pertemuan6.SplashScreenActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
-        <!-- Auth Activity / Login -->
         <activity
-            android:name=".pertemuan6.AuthActivity"
+            android:name=".Home.pertemuan6.AuthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
         <!-- Pertemuan 3 -->
         <activity
-            android:name=".pertemuan3.ThirdActivity"
+            android:name=".Home.pertemuan3.ThirdActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
-            android:name=".pertemuan3.activity_third_result"
+            android:name=".Home.pertemuan3.activity_third_result"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
         <!-- Pertemuan 4 -->
         <activity
-            android:name=".pertemuan4.FourthActivity"
+            android:name=".Home.pertemuan4.FourthActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize" />
 
         <!-- Pertemuan 5 -->
         <activity
-            android:name=".pertemuan5.FifthActivity"
+            android:name=".Home.pertemuan5.FifthActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize" />
 
-        <!-- WebView -->
         <activity
-            android:name=".pertemuan5.WebViewActivity"
+            android:name=".Home.pertemuan5.WebViewActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
+        <!-- Pertemuan 7 -->
         <activity
-            android:name=".pertemuan7.SeventhActivity"
+            android:name=".Home.pertemuan7.SeventhActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
+        <!-- Bottom Navigation -->
+        <activity
+            android:name=".BaseActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.gebi_3tie_mobile.pertemuan3
+package com.example.gebi_3tie_mobile.Home.pertemuan3
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

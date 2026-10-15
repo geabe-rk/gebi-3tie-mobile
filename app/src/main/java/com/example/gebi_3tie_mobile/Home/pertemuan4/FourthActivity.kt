@@ -1,4 +1,4 @@
-package com.example.gebi_3tie_mobile.pertemuan4
+package com.example.gebi_3tie_mobile.Home.pertemuan4
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,7 +7,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.gebi_3tie_mobile.MainActivity
 import com.example.gebi_3tie_mobile.R
 import com.example.gebi_3tie_mobile.databinding.ActivityFourthBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder

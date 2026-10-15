@@ -1,10 +1,10 @@
-package com.example.gebi_3tie_mobile.pertemuan3
+package com.example.gebi_3tie_mobile.Home.pertemuan3
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.gebi_3tie_mobile.R
-import com.example.gebi_3tie_mobile.pertemuan4.FourthActivity
+import com.example.gebi_3tie_mobile.Home.pertemuan4.FourthActivity
 
 class ThirdActivity : AppCompatActivity() {
 

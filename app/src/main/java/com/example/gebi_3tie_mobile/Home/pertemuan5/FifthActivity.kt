@@ -1,4 +1,4 @@
-package com.example.gebi_3tie_mobile.pertemuan5
+package com.example.gebi_3tie_mobile.Home.pertemuan5
 
 import android.content.Intent
 import android.os.Bundle
