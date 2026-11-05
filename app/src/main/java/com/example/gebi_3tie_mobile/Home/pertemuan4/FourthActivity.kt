@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.gebi_3tie_mobile.BaseActivity
 import com.example.gebi_3tie_mobile.R
 import com.example.gebi_3tie_mobile.databinding.ActivityFourthBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -36,7 +37,7 @@ class FourthActivity : AppCompatActivity() {
         binding.btnShowSnackbar.setOnClickListener {
             Snackbar.make(binding.root, "Ini adalah Snackbar", Snackbar.LENGTH_SHORT)
                 .setAction("Tampilkan"){
-                    val i = Intent(this@FourthActivity, MainActivity::class.java)
+                    val i = Intent(this@FourthActivity, BaseActivity::class.java)
                     startActivity(i)
                     Log.e("Info Snackbar","Snackbar ditutup")
                 }

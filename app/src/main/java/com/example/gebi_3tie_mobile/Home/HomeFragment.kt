@@ -1,4 +1,4 @@
-package com.example.gebi_3tie_mobile.home
+package com.example.gebi_3tie_mobile.Home
 
 import android.content.Context
 import com.example.gebi_3tie_mobile.Home.pertemuan6.AuthActivity
@@ -36,7 +36,7 @@ class HomeFragment : Fragment() {
 
         // Toolbar Home
         (requireActivity() as AppCompatActivity).setSupportActionBar(binding.toolbar)
-        (requireActivity() as AppCompatActivity).supportActionBar?.title = "com/example/gebi_3tie_mobile/Home"
+        (requireActivity() as AppCompatActivity).supportActionBar?.title = "Home"
 
         // Tombol Pertemuan 3
         binding.btnToThird.setOnClickListener {

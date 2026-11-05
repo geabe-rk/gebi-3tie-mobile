@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.gebi_3tie_mobile.databinding.ActivityBaseBinding
-import com.example.gebi_3tie_mobile.home.HomeFragment
+import com.example.gebi_3tie_mobile.Home.HomeFragment
 import com.example.gebi_3tie_mobile.message.MessageFragment
 import com.example.gebi_3tie_mobile.more.MoreFragment
 
