@@ -4,5 +4,9 @@
     <color name="red">#FFFF0000</color>
     <color name="yellow">#FFFFFF00</color>
     <color name="green">#FF00FF00</color>
+    <color name="white">#F8F8F8</color>
+    <color name="black">#000000</color>
+
+
 
 </resources>

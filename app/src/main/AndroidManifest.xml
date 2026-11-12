@@ -26,10 +26,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
             android:name=".Home.pertemuan6.AuthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
@@ -69,10 +65,6 @@
         <!-- Bottom Navigation -->
         <activity
             android:name=".BaseActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".Home.pertemuan10.NinthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
