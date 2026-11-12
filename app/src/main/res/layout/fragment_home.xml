@@ -6,17 +6,29 @@
     android:layout_height="match_parent"
     android:background="#F5F7FA">
 
+    <!-- Background Header Wave -->
+    <View
+        android:id="@+id/background_header"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:background="@drawable/bg_header_wave"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="?attr/actionBarSize"
-        android:background="#1976D2"
+        android:background="@android:color/transparent"
         app:title="Home"
         app:titleTextColor="@android:color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Welcome Text -->
     <TextView
         android:id="@+id/txtWelcome"
         android:layout_width="0dp"
@@ -32,6 +44,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Tombol Pertemuan 2 -->
     <Button
         android:id="@+id/btnToSecond"
         android:layout_width="0dp"
@@ -43,6 +56,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Tombol Pertemuan 3 -->
     <Button
         android:id="@+id/btnToThird"
         android:layout_width="0dp"
@@ -53,6 +67,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Tombol Pertemuan 4 -->
     <Button
         android:id="@+id/btnToFourth"
         android:layout_width="0dp"
@@ -63,6 +78,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Tombol Pertemuan 5 -->
     <Button
         android:id="@+id/btnToFifth"
         android:layout_width="0dp"
@@ -73,6 +89,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Tombol Pertemuan 7 -->
     <Button
         android:id="@+id/btnToSeventh"
         android:layout_width="0dp"
@@ -83,6 +100,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Tombol Pertemuan 10 -->
+    <Button
+        android:id="@+id/btnToTen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="Pertemuan 10"
+        app:layout_constraintTop_toBottomOf="@id/btnToSeventh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Logout -->
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="0dp"
@@ -92,7 +121,7 @@
         android:backgroundTint="#D32F2F"
         android:text="Logout"
         android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/btnToSeventh"
+        app:layout_constraintTop_toBottomOf="@id/btnToTen"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

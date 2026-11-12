@@ -21,15 +21,14 @@
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".Home.pertemuan6.AuthActivity"
             android:exported="false"
@@ -40,7 +39,6 @@
             android:name=".Home.pertemuan3.ThirdActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".Home.pertemuan3.activity_third_result"
             android:exported="false"
@@ -57,7 +55,6 @@
             android:name=".Home.pertemuan5.FifthActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".Home.pertemuan5.WebViewActivity"
             android:exported="false"
@@ -74,7 +71,14 @@
             android:name=".BaseActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
+        <activity
+            android:name=".Home.pertemuan10.NinthActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Home.pertemuan10.TenActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
