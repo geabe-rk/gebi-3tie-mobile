@@ -14,6 +14,7 @@ import com.example.gebi_3tie_mobile.Home.pertemuan5.FifthActivity
 import com.example.gebi_3tie_mobile.Home.pertemuan6.AuthActivity
 import com.example.gebi_3tie_mobile.Home.pertemuan7.SeventhActivity
 import com.example.gebi_3tie_mobile.Home.pertemuan10.TenActivity
+import com.example.gebi_3tie_mobile.Home.pertemuan11.EleventhActivity
 import com.example.gebi_3tie_mobile.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -72,6 +73,13 @@ class HomeFragment : Fragment() {
         binding.btnToTen.setOnClickListener {
             startActivity(
                 Intent(requireContext(), TenActivity::class.java)
+            )
+        }
+
+        // Tombol Pertemuan 11
+        binding.btnToEleventh.setOnClickListener {
+            startActivity(
+                Intent(requireContext(), EleventhActivity::class.java)
             )
         }
 
